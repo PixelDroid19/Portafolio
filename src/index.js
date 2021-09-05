@@ -7,6 +7,7 @@ import './styles/index.css';
 import BoxMain from './containers/Main';
 
 ReactDOM.render(
+  
   <React.StrictMode>
     <BoxMain />
   </React.StrictMode>,

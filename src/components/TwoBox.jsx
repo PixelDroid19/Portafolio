@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import img from '../assets/img/bg.png';
+import proyect1 from '../assets/proyect/proyect1.png';
+import proyect2 from '../assets/proyect/proyect2.png';
+import proyect3 from '../assets/proyect/proyect3.png';
 
 export default class MysecondBox extends Component {
     render(){
@@ -22,11 +24,17 @@ export default class MysecondBox extends Component {
 
                 <div className="MiniBoxProyects">
                     <div className="BoxModelOne">
-                        <img className="ImgReposive" src={img} alt="..."/>
+                        <img className="ImgReposive" src={proyect1} alt="..."/>
                     </div>
 
-                    <div className="BoxModelOne">
+                    <div className="BoxList">
+                    <div className="BoxModelTwo">
+                        <img class="img-responsive ..." src={proyect2} alt="Wallpaper"/>
+                    </div>
 
+                    <div className="BoxModelTwo">
+                        <img class="img-responsive ..." src={proyect3} alt="Wallpaper"/>
+                    </div>
                     </div>
                 </div>
             </div>
