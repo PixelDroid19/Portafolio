@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Nunito', sans-serif;
+}
+
+/*Caja numero 1*/
+.BoxOne{
+  padding:50px;
+  background-color:rgb(15,14,23);
+}
+
+.center{
+  margin:0 auto; 
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+
+.TextOne, .TextTwo{
+  color:white;
+  place-content: center;
+  width:100%;
+  height: 100%;
+}
+.TextOne h1{
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.TextOne span{
+  font-size: 20px;
+  color:rgb(167,169,190);
+}
+
+.reposive{
+  max-width: 400px;
+}
+
+.TextTwo div{
+ text-align: center;
+
+}
+/*TwoBox*/
+.TwoBox{
+  background-color: rgb(255, 255, 255);
+}
+
+.BoxText{
+  margin: 10px;
+  display: grid;
+  color:black;
+   grid-template-columns: 50% 50%;
+}
+.BoxText div{
+  margin:0 auto;
+  width: 50%;
+}
+
+.BoxText div p{
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.BoxText div h2{
+  font-weight: 900;
+}
+
+.MiniBoxProyects{
+  background-color: red;
+  grid-template-rows: repeat( auto-fit, minmax(250px, 1fr) );
+}
+.BoxModelOne{
+  width: 90%;
+  margin: 30px auto;
+  background-color:blue;
+}  
+.ImgReposive{
+  width: 300px;
+}
+/*Three Box*/
+
+.BoxThree{
+  display: grid;
+  color:black;
+  background-color:rgb(242,125,110);
+  padding:20px;
+  grid-template-rows: 20% 80%;
+}
+
+.ListBox{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr) );
+}
+
+.Design, .Developer, .Marca{
+  margin: 20px auto;
+}
+
+.btnServ{
+  padding:10px;
+  border: none;
+  color:rgb(255,137,6);
+  background-color:black;
+}
+
+.btnServ:hover{
+  border: none;
+  color:rgb(255,137,6);
+  background-color:rgb(36, 31, 31);
+}
+
+/*Box Four*/
+.BoxFour{
+  color: white;
+  background-color:rgb(15,14,23);
+  padding:20px;
+}
+.CardContent{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) );
+}
+
+.Card{
+  margin:10px;
+  margin:10px auto;
+  padding:10px;
+  width: 300px;
+ 
+}
+
+.Card h6{
+  color:pink;
+}
+
+/*Box Five*/
+.BoxFive{
+  padding:20px;
+  background-color:rgb(250,162,133);
+}
+
+.form-group{
+  border:1px solid black;
+  color: white;
+  width:50%;
+  margin:0 auto;
+  padding:40px;
+  background-color:rgb(34, 33, 33);
+}
+.form-input{
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .center{
+    margin:0 auto; 
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+  .BoxText{
+     grid-template-columns: 100%;
+  }
+  .BoxText div{
+    width: 90%;
+  }
+  .BoxText div h2{
+    font-weight: 300;
+  }
+  .BoxThree{
+    grid-template-rows:auto;
+  }.ListBox{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 250px) );
+  }
+  .form-group{
+    width:100%;
+  }
+  
+}
